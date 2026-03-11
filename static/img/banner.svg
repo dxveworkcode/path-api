@@ -1,63 +1,34 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320">
-  <rect width="1280" height="320" fill="#080910"/>
+  <rect width="1280" height="320" fill="#000000"/>
 
-  <!-- Top rule -->
-  <line x1="0" y1="0" x2="1280" y2="0" stroke="#E8EAED" stroke-width="3"/>
-  <!-- Bottom rule -->
-  <line x1="0" y1="319" x2="1280" y2="319" stroke="#E8EAED" stroke-width="1" stroke-opacity="0.15"/>
+  <!-- Wordmark -->
+  <text x="72" y="118" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="700" font-size="64" fill="#F5F5F7" letter-spacing="-2">Path</text>
+  <text x="72" y="118" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="700" font-size="64" fill="#3D7EFF" letter-spacing="-2" dx="168">.</text>
 
-  <!-- Left accent bar -->
-  <rect x="0" y="0" width="4" height="320" fill="#3D7EFF"/>
+  <!-- Tagline -->
+  <text x="72" y="158" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="400" font-size="18" fill="#86868B">Web URLs to native deep-link schemes. One call.</text>
 
-  <!-- Wordmark: P -->
-  <text x="56" y="152" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="900" font-size="108" fill="#E8EAED" letter-spacing="-3">P</text>
-  <!-- Dot -->
-  <text x="166" y="152" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="900" font-size="108" fill="#3D7EFF">·</text>
-  <!-- ATH -->
-  <text x="196" y="152" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="900" font-size="108" fill="#E8EAED" letter-spacing="-3">ATH</text>
+  <!-- Endpoint pill -->
+  <rect x="72" y="186" width="310" height="34" rx="8" fill="#1C1C1E"/>
+  <text x="90" y="208" font-family="'Courier New',Courier,monospace" font-size="13" fill="#3D7EFF">GET</text>
+  <text x="126" y="208" font-family="'Courier New',Courier,monospace" font-size="13" fill="#F5F5F7">/v1/resolve?url=</text>
+  <text x="284" y="208" font-family="'Courier New',Courier,monospace" font-size="13" fill="#86868B">{url}</text>
 
-  <!-- Subtitle rule -->
-  <line x1="56" y1="172" x2="520" y2="172" stroke="#E8EAED" stroke-width="1" stroke-opacity="0.18"/>
+  <!-- Vertical separator -->
+  <line x1="640" y1="56" x2="640" y2="264" stroke="#ffffff" stroke-width="1" stroke-opacity="0.06"/>
 
-  <!-- Subtitle -->
-  <text x="56" y="198" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="400" font-size="15" fill="#7A8290" letter-spacing="0.5">Deep link infrastructure for mobile developers</text>
+  <!-- Stat 1 -->
+  <text x="700" y="152" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="700" font-size="60" fill="#F5F5F7" letter-spacing="-2">50+</text>
+  <text x="700" y="184" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="400" font-size="14" fill="#86868B">Platforms</text>
 
-  <!-- API path label -->
-  <text x="56" y="234" font-family="'Courier New',Courier,monospace" font-weight="400" font-size="13" fill="#3D7EFF" letter-spacing="0.5">GET /v1/resolve?url=</text>
-  <text x="227" y="234" font-family="'Courier New',Courier,monospace" font-weight="400" font-size="13" fill="#4ADE80" letter-spacing="0.5">{url}</text>
-  <text x="264" y="234" font-family="'Courier New',Courier,monospace" font-weight="400" font-size="13" fill="#7A8290" letter-spacing="0.5">→</text>
-  <text x="283" y="234" font-family="'Courier New',Courier,monospace" font-weight="400" font-size="13" fill="#E8EAED" letter-spacing="0.5">native://deep-link</text>
+  <!-- Stat 2 -->
+  <text x="900" y="152" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="700" font-size="60" fill="#F5F5F7" letter-spacing="-2">8ms</text>
+  <text x="900" y="184" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="400" font-size="14" fill="#86868B">Avg response</text>
 
-  <!-- Vertical divider -->
-  <line x1="620" y1="40" x2="620" y2="280" stroke="#E8EAED" stroke-width="1" stroke-opacity="0.1"/>
+  <!-- Stat 3 -->
+  <text x="1100" y="152" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="700" font-size="60" fill="#F5F5F7" letter-spacing="-2">1</text>
+  <text x="1100" y="184" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="400" font-size="14" fill="#86868B">Endpoint</text>
 
-  <!-- Stats: column headers -->
-  <text x="660" y="80" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="700" font-size="10" fill="#3D7EFF" letter-spacing="2.5">PLATFORM</text>
-  <text x="820" y="80" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="700" font-size="10" fill="#3D7EFF" letter-spacing="2.5">ENDPOINT</text>
-  <text x="980" y="80" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="700" font-size="10" fill="#3D7EFF" letter-spacing="2.5">AVG LATENCY</text>
-
-  <!-- Stats: numbers -->
-  <text x="660" y="148" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="900" font-size="72" fill="#E8EAED" letter-spacing="-3">50+</text>
-  <text x="820" y="148" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="900" font-size="72" fill="#E8EAED" letter-spacing="-3">1</text>
-  <text x="980" y="148" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="900" font-size="72" fill="#E8EAED" letter-spacing="-3">8ms</text>
-
-  <!-- Stats: sub-labels -->
-  <text x="660" y="172" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="400" font-size="12" fill="#7A8290">platforms supported</text>
-  <text x="820" y="172" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="400" font-size="12" fill="#7A8290">REST endpoint</text>
-  <text x="980" y="172" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="400" font-size="12" fill="#7A8290">avg response</text>
-
-  <!-- Bottom stat row rule -->
-  <line x1="640" y1="196" x2="1264" y2="196" stroke="#E8EAED" stroke-width="1" stroke-opacity="0.1"/>
-
-  <!-- Tech stack -->
-  <text x="660" y="228" font-family="'Courier New',Courier,monospace" font-size="12" fill="#7A8290">FastAPI</text>
-  <text x="730" y="228" font-family="'Courier New',Courier,monospace" font-size="12" fill="#3D3D45">·</text>
-  <text x="742" y="228" font-family="'Courier New',Courier,monospace" font-size="12" fill="#7A8290">Python 3.11</text>
-  <text x="840" y="228" font-family="'Courier New',Courier,monospace" font-size="12" fill="#3D3D45">·</text>
-  <text x="852" y="228" font-family="'Courier New',Courier,monospace" font-size="12" fill="#7A8290">Vercel</text>
-  <text x="900" y="228" font-family="'Courier New',Courier,monospace" font-size="12" fill="#3D3D45">·</text>
-  <text x="912" y="228" font-family="'Courier New',Courier,monospace" font-size="12" fill="#7A8290">Free tier available</text>
-
-  <!-- URL -->
-  <text x="660" y="268" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="400" font-size="13" fill="#3D7EFF" letter-spacing="0.3">pthapi.vercel.app</text>
+  <!-- Bottom label -->
+  <text x="72" y="278" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="12" fill="#3D3D42">pthapi.vercel.app</text>
 </svg>

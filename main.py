@@ -18,6 +18,8 @@ from core.exceptions import (
 from core.models import ResolveResponse
 from resolvers.registry import RESOLVER_MAP
 
+RAPID_SECRET = os.environ.get("RAPIDAPI_PROXY_SECRET", "")
+
 app = FastAPI(
     title="Path DeepLink API",
     description="Resolve standard web URLs into mobile deep-link schemes.",
