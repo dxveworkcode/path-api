@@ -48,7 +48,7 @@ async def generic_handler(request: Request, exc: Exception) -> JSONResponse:
 
 @app.middleware("http")
 async def require_rapidapi(request, call_next):
-    if RAPID_SECRET:
+    if RAPID_SECRET and request.url.path.startswith("/v1/"):
         secret = request.headers.get("X-RapidAPI-Proxy-Secret")
         if secret != RAPID_SECRET:
             return JSONResponse({"error": "forbidden"}, status_code=403)
