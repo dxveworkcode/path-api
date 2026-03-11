@@ -1,11 +1,13 @@
 import html
-import json
+import json 
+import os
 from urllib.parse import urlparse
 
 from fastapi import FastAPI, Query, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
+from fastapi import Header, HTTPException
 
 from core.exceptions import (
     InvalidURLError,
@@ -41,6 +43,14 @@ async def generic_handler(request: Request, exc: Exception) -> JSONResponse:
         status_code=500,
         content={"error": "internal_error", "detail": "An unexpected error occurred."},
     )
+
+@app.middleware("http")
+async def require_rapidapi(request, call_next):
+    if RAPID_SECRET:
+        secret = request.headers.get("X-RapidAPI-Proxy-Secret")
+        if secret != RAPID_SECRET:
+            return JSONResponse({"error": "forbidden"}, status_code=403)
+    return await call_next(request)
 
 
 @app.get(

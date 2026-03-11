@@ -6,7 +6,6 @@
 
 [![Live API](https://img.shields.io/badge/Live%20API-pthapi.vercel.app-3D7EFF?style=flat-square&logo=vercel&logoColor=white)](https://pthapi.vercel.app)
 [![Platforms](https://img.shields.io/badge/Platforms-50%2B-3D7EFF?style=flat-square)](https://pthapi.vercel.app/#how)
-[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
 ---
 
