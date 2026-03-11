@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+.env.*
+.vercel
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+static/index.html
+static/img/banner.png
+static/img/banner.jpg
