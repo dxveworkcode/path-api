@@ -51,7 +51,12 @@ async def require_rapidapi(request, call_next):
     if RAPID_SECRET and request.url.path.startswith("/v1/"):
         secret = request.headers.get("X-RapidAPI-Proxy-Secret")
         if secret != RAPID_SECRET:
-            return JSONResponse({"error": "forbidden"}, status_code=403)
+            host = request.headers.get("host", "")
+            origin = request.headers.get("origin", "")
+            referer = request.headers.get("referer", "")
+            same_origin = host and (host in origin or host in referer)
+            if not same_origin:
+                return JSONResponse({"error": "forbidden"}, status_code=403)
     return await call_next(request)
 
 
